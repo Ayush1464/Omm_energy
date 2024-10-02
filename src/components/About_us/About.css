@@ -1,0 +1,67 @@
+.about_content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.mission, .vision, .values {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%; /* Adjust as necessary */
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white; /* Change text color to white */
+}
+
+.mission {
+  background-color: #ff69b4; /* Deep Pink */
+}
+
+.vision {
+  background-color: #1e90ff; /* Deep Blue */
+}
+
+.values {
+  background-color: #32cd32; /* Deep Green */
+}
+
+/* Image styles */
+.mission img,
+.vision img,
+.values img {
+  max-width: 100%; /* Ensures images do not exceed container width */
+  height: 50px; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+  margin-bottom: 15px; /* Space between image and heading */
+}
+
+/* Additional styles for headings and list */
+.about_content h1 {
+  margin: 10px 0; /* Space above and below headings */
+  color: white; /* Ensure main heading text color is also white */
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  color: white; /* Ensure list text color is white */
+}
+/* Add this to your CSS file */
+.underline {
+  width: 10%; /* Adjust width as necessary */
+  height: 4px; /* Height of the line */
+  background-color: #007bff; /* Change to your desired color */
+  margin-left: 2%;
+  margin-top: 2%;
+  
+}
+.mvv{
+  margin-left: 2%;
+  font-size: 30px;
+  font-weight: 600;
+}
+.values-span{
+  color: #1e90ff;
+}
+

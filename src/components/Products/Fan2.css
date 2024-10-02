@@ -1,0 +1,51 @@
+.fan2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .fan2-image {
+    width: 180px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .fan2-content {
+    text-align: left;
+    padding: 0 20px;
+    max-width: 800px;
+  }
+  
+  .fan2-content h2 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .fan2-content p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  .fan2-features {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.1em;
+  }
+  
+  .fan2-features li {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .fan2-features li::before {
+    content: "•";
+    color: #007bff;
+    padding-right: 10px;
+  }
+  

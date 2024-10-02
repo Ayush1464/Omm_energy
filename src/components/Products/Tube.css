@@ -1,0 +1,50 @@
+.tube-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.tube-image {
+  width: 300px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+}
+
+.tube-content {
+  text-align: left;
+  padding: 0 20px;
+  max-width: 800px; /* Limit content width for readability */
+}
+
+.tube-content h2 {
+  font-size: 1.8em; /* Heading size */
+  color: #007bff; /* Heading color */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.tube-content p {
+  color: #555; /* Paragraph text color */
+  line-height: 1.6; /* Line height for readability */
+  font-size: 1.1em; /* Font size for paragraph text */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.tube-features {
+  margin-top: 20px; /* Space above the features list */
+  padding: 0; /* Remove padding */
+  list-style-type: none; /* Remove default list styling */
+  font-size: 1.1em; /* Font size for features list */
+}
+
+.tube-features li {
+  margin-bottom: 10px; /* Space between list items */
+  color: #333; /* Color for list items */
+}
+
+.tube-features li::before {
+  content: "•"; /* Bullet point */
+  color: #007bff; /* Color for bullet point */
+  padding-right: 10px; /* Space between bullet and text */
+}

@@ -1,0 +1,51 @@
+.bulb2-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Padding around the container */
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .bulb2-image {
+    width: 180px; /* Fixed width for the bulb image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the image */
+  }
+  
+  .bulb2-content {
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Padding on the sides */
+    max-width: 800px; /* Maximum width for content */
+  }
+  
+  .bulb2-content h2 {
+    font-size: 1.8em; /* Size for the heading */
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .bulb2-content p {
+    color: #555; /* Dark grey color for the paragraph */
+    line-height: 1.6; /* Improved line height for readability */
+    font-size: 1.1em; /* Font size for paragraphs */
+    margin: 10px 0; /* Margin for paragraphs */
+  }
+  
+  .bulb2-features {
+    margin-top: 20px; /* Space above features list */
+    padding: 0; /* Remove padding */
+    list-style-type: none; /* Remove default list styling */
+    font-size: 1.1em; /* Font size for features */
+  }
+  
+  .bulb2-features li {
+    margin-bottom: 10px; /* Space between list items */
+    color: #333; /* Dark color for list items */
+  }
+  
+  .bulb2-features li::before {
+    content: "•"; /* Bullet point before each list item */
+    color: #007bff; /* Blue color for bullet points */
+    padding-right: 10px; /* Space between bullet and text */
+  }
+  

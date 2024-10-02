@@ -1,0 +1,142 @@
+.client-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 4%;
+  justify-content: center; /* Center the cards */
+}
+
+.client-section h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Client Card Styles */
+.client-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 320px; /* Default width */
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Accent Circle Effect */
+.client-card::before {
+  content: '';
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  width: 150px;
+  height: 150px;
+  background-color: #007bff; /* Accent color */
+  border-radius: 50%;
+  opacity: 0.2;
+  transition: all 0.4s ease-in-out;
+}
+
+.client-card:hover::before {
+  top: -100px;
+  left: -100px;
+  opacity: 0.4;
+}
+
+/* Hover Effects */
+.client-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Client Feedback Styles */
+.client-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.client-feedback {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.client-feedback h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.client-feedback p {
+  font-size: 14px;
+  color: #777;
+}
+
+.client-card:hover .client-feedback {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.client-feedback-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablet styles */
+  .client-card {
+    width: 250px; /* Adjust width for tablets */
+  }
+
+  .client-section h2 {
+    font-size: 24px; /* Adjust heading size for tablets */
+  }
+
+  .client-feedback h3 {
+    font-size: 18px; /* Adjust feedback heading size */
+  }
+
+  .client-feedback p {
+    font-size: 12px; /* Adjust feedback text size */
+  }
+}
+
+@media (max-width: 768px) { /* Mobile styles */
+  .client-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+  }
+
+  .client-card {
+    width: 100%; /* Full width for mobile */
+    max-width: 300px; /* Limit maximum width */
+  }
+
+  .client-section h2 {
+    font-size: 22px; /* Further adjust heading size */
+  }
+
+  .client-feedback h3 {
+    font-size: 16px; /* Adjust feedback heading size for mobile */
+  }
+
+  .client-feedback p {
+    font-size: 12px; /* Adjust feedback text size for mobile */
+  }
+
+  .client-feedback-icon {
+    font-size: 30px; /* Smaller icon size on mobile */
+  }
+}

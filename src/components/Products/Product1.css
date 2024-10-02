@@ -1,0 +1,92 @@
+body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.product {
+    height: 120px;
+    margin-top: 2%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.valuesbold {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ongoing-projects {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-list {
+    display: flex; /* Changed from grid to flex for uniform height */
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(33% - 20px); /* Maintain equal width, 3 items per row with spacing */
+    min-height: 400px; /* Ensures all cards have the same minimum height */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%; /* Full width of the card */
+    height: 300px; /* Set a uniform height */
+    object-fit: cover; /* Ensures images maintain aspect ratio and cover the space */
+    border-radius: 8px; /* Rounded corners for the images */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column; /* Ensure content stacks correctly */
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align content */
+}
+
+.project-card p {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.project-card h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.support-info {
+    margin-top: 5%;
+}

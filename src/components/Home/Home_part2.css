@@ -1,0 +1,105 @@
+.card_container {
+  display: flex;
+  justify-content: center; /* Center cards */
+  flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+  margin: 20px; /* Margin around the container */
+}
+.home5para{
+  display: flex;                   /* Use flexbox for centering */
+  align-items: center;             /* Center items vertically */
+  justify-content: center;         /* Center items horizontally */
+  max-width: 600px;               /* Limit the width of the card */
+  margin: 20px auto;              /* Center the card with auto margins */
+  padding: 20px;                  /* Padding inside the card */
+      /* Card background color */
+  
+
+  text-align: center;  
+}
+.cardHome {
+  background-color: #fff; /* Background color for cards */
+  border: 1px solid #ddd; /* Light border around cards */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  width: calc(30% - 20px); /* Width of each card */
+  margin: 10px; /* Space around each card */
+  transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+.cardHome img {
+  width: 100%; /* Full width image */
+  height: auto; /* Maintain aspect ratio */
+
+}
+
+.cardHome:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.button-container {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Space above the button container */
+}
+
+.service_button {
+  background-color: #007BFF; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.service_button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.heading-underline {
+  position: relative; /* Needed for the underline */
+  display: inline-block; /* Make the span an inline-block element */
+}
+
+.heading-underline::after {
+  content: ''; /* Creates the pseudo-element */
+  display: block; /* Makes it a block element */
+  width: 50%; /* Adjust the width of the underline */
+  height: 4px; /* Thickness of the underline */
+  background-color: #007bff; /* Color of the underline */
+  position: absolute; /* Position relative to the span */
+  left: 0; /* Align it to the left */
+  bottom: -8px; /* Position it below the text */
+  border-radius: 2px; /* Rounded corners */
+  transition: width 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Optional: Add hover effect */
+.heading-underline:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+.homepara3 {
+  margin-top: 5%;
+}
+
+.cardHome img {
+  position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablet styles */
+  .cardHome {
+    width: calc(45% - 20px); /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 768px) { /* Mobile styles */
+  .cardHome {
+    width: calc(100% - 20px); /* Full width for mobile */
+    margin: 10px 0; /* Margin adjustment */
+  }
+}

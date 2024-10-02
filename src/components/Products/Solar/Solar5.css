@@ -1,0 +1,33 @@
+.induction-container {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Padding around the container */
+    border: 1px solid #ccc; /* Light border around the container */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .induction-image {
+    width: 150px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and content */
+  }
+  
+  .induction-content {
+    flex: 1; /* Allow content to take available space */
+  }
+  
+  .induction-content h2 {
+    font-size: 1.8em; /* Size for the heading */
+    color: #2c3e50; /* Dark color for the heading */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .induction-content p {
+    color: #555; /* Dark grey color for the paragraph */
+    line-height: 1.6; /* Improved line height for readability */
+    margin: 5px 0; /* Margin for paragraphs */
+  }
+  
